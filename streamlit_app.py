@@ -8,4 +8,4 @@ if number%2==1:
     st.write("Bilangan",number,"termasuk bilangan ganjil")
 else:
     st.wrtie("BIlangan",number,"termasuk bilangan genap")
-st.write("Nomor sekarang adalah ",number)
+
