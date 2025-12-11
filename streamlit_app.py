@@ -1,19 +1,12 @@
 import streamlit as st
 
-st.title("KALKULATOR PERHITUNGAN KADAR AIR")
+st.title("PENENTUAN BILANGAN GANJIL DAN GENAP")
 st.title(":green[MASUK KE DALAM]")
 import streamlit as st
 
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.header("A cat")
-    st.image("https://static.streamlit.io/examples/cat.jpg")
-
-with col2:
-    st.header("A dog")
-    st.image("https://static.streamlit.io/examples/dog.jpg")
-
-with col3:
-    st.header("An owl")
-    st.image("https://static.streamlit.io/examples/owl.jpg")
+number = st.number_input(label, min_value=None, max_value=None, value="min", step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible", icon=None, width="stretch")
+if number%2==1:
+    st.write("Bilangan",number,"termasuk bilangan ganjil")
+else:
+    st.wrtie("BIlangan",number,"termasuk bilangan genap")
+st.write("Nomor sekarang adalah ",number)
